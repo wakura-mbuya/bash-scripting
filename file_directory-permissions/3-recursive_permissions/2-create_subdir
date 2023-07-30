@@ -1,0 +1,3 @@
+#!/bin/bash
+cd my_folder
+mkdir subdir1 subdir2
