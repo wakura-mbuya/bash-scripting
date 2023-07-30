@@ -1,0 +1,2 @@
+#!/bin/bash
+chown :mygroup group_file.txt

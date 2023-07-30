@@ -1,0 +1,3 @@
+#!/bin/bash
+useradd usr1
+usermod -g mygroup usr1
