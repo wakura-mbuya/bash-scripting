@@ -1,0 +1,5 @@
+#!/bin/bash
+cd shared_dir
+touch file1.txt
+chmod 640 file1.txt
+cd ..
