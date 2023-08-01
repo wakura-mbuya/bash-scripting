@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod u-w,g-w revoke_file.txt
