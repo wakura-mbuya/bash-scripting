@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod 2775 test_dir 
