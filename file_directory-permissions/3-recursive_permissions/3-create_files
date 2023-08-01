@@ -1,0 +1,3 @@
+#!/bin/bash
+cd my_folder/subdir1 && touch test_file.txt
+cd ../subdir2 && touch test_file.txt

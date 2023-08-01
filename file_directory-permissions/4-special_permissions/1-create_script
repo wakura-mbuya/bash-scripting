@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "#!/bin/bash" > my_script.sh
+chmod u+x my_script.sh

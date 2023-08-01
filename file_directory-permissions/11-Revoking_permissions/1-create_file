@@ -1,0 +1,2 @@
+#!/bin/bash
+touch revoke_file.txt

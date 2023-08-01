@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod 4764 my_script.sh
