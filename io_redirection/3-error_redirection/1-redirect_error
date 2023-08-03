@@ -1,0 +1,2 @@
+#!/bin/bash
+rm no_file.txt 2> error.log
