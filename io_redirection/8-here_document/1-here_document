@@ -1,0 +1,8 @@
+#!/bin/bash
+cat << EOF
+This is the start of the content
+This content is amazing
+I am excited typing this
+Hope to continue later
+This is the end of the content
+EOF
