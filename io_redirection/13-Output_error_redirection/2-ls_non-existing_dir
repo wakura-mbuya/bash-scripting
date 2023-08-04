@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -l ~/music > output_and_error.log 2>&1
