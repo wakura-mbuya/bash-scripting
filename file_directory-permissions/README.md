@@ -17,9 +17,9 @@ The permissions are set for 3 entities:
 
 You can change file permissions using the <strong>chmod</strong> command. For example, to grant read and write permissions to the owner of the file:
 
-'''
+```
 	chmod 600 file.txt
-'''
+```
 
 ### Directory Permissions
 Directory permissions work similar to file permissions, the only key difference is <b>x</b> permission on a directory allows users to enter (cd) into the directory and access its contents. Without execute permission, users cannot access the directory's contents even if they have read permissions on the files inside.
@@ -27,15 +27,15 @@ Directory permissions work similar to file permissions, the only key difference 
 ### Ownership
 Every file and directory in Linux is associated with an owner and a group. The  owner is the user who created the file, and the group is a collection of users with common permissions. The <b>chown</b> command is used to change ownership of the files and directories, while the 'chgrp' command is used to change the group ownership. for example, to change the owner of a file to user <em>john</em>:
 
-'''
+```
 	chown john file.txt
-'''
+```
 
 To change the group ownership of a file to the group <em>developers</em>:
 
-'''
+```
 	chgrp developers file.txt
-'''
+```
 
 ### Special Permissions:
 Linux also support special permissions such as <em>setuid, setguid</em> and <em>sticky bit</em>. The setuid and setgid permissions allow theuser executing the file to temporarily have the rights of the file owner or group, respectively. The sticky bit is often used on directories to restrict users from deleting files they do not own.
@@ -44,25 +44,25 @@ Linux also support special permissions such as <em>setuid, setguid</em> and <em>
 	<li>
 	<b>Setuid (SUID):</b> When the setuid permission is set on an executable file, the file is executed with the priviledges of the file's owner, not the user who executed it. This is often used for executable programs that need elevated permissions to perform specific tasks. For example:
 
-'''
+```
 	chmod u+s executable_file
-'''
+```
 
 	</li>
 	<li>
 	<b>Setgid(SGID):</b> When the setgid permission is set on an executable file or directory, the process or new files created within the directory inherit the group ownership of the parent directory rather thant the group of the user who created them. This is commonly used for shared directories where multiple users need group access. For example:
 
-'''
+```
 	chmod g+s directory
-'''
+```
 
 	</li>
 	<li>
 	<b>Sticky Bit: </b> The sticky bit is primarily used on directories to ensure that only the owner of a file can delete or rename it, even if other users have write permissions on the directory. This prevents users from tampering with each other's files in shared directories like <em> /tmp </em>. for example:
 
-'''
+```
 	chmod +t directory
-'''
+```
 
 	</li>
 
@@ -76,16 +76,16 @@ Instead of using octal notation, you can set permissions using a symbolic notati
 </ul>
 For example, to grant read and execute permissions to the owner and group of a file:
 
-'''
+```
 	chmod u+rx, g+rx file.txt
-'''
+```
 
 ### Recursive Permission Changes
 You can apply permission changes recursively to directories and their contents using the **-R** option with **chmod**. For example:
 
-'''
+```
 	chmod -R u+r directory
-'''
+```
 
 ### Practical Exercises
 This folder and its subdirectories contains practical exercises on Linux file Permissions. The tasks included are:
