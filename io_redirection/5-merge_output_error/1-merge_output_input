@@ -1,0 +1,2 @@
+#!/bin/bash
+ls no_dir > output_and_error.log 2>&1

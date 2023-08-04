@@ -1,0 +1,2 @@
+search_string="wakura"
+grep $search_string <<< "This is wakura, enouth osf kdidoidjkdod"
