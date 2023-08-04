@@ -41,38 +41,30 @@ To change the group ownership of a file to the group <em>developers</em>:
 Linux also support special permissions such as <em>setuid, setguid</em> and <em>sticky bit</em>. The setuid and setgid permissions allow theuser executing the file to temporarily have the rights of the file owner or group, respectively. The sticky bit is often used on directories to restrict users from deleting files they do not own.
 
 <ul>
-	<li>
-	<b>Setuid (SUID):</b> When the setuid permission is set on an executable file, the file is executed with the priviledges of the file's owner, not the user who executed it. This is often used for executable programs that need elevated permissions to perform specific tasks. For example:
+	<li><b>Setuid (SUID):</b> When the setuid permission is set on an executable file, the file is executed with the priviledges of the file's owner, not the user who executed it. This is often used for executable programs that need elevated permissions to perform specific tasks. For example:</li>
 
 ```
 	chmod u+s executable_file
 ```
-
-	</li>
-	<li>
-	<b>Setgid(SGID):</b> When the setgid permission is set on an executable file or directory, the process or new files created within the directory inherit the group ownership of the parent directory rather thant the group of the user who created them. This is commonly used for shared directories where multiple users need group access. For example:
+<li><b>Setgid(SGID):</b> When the setgid permission is set on an executable file or directory, the process or new files created within the directory inherit the group ownership of the parent directory rather thant the group of the user who created them. This is commonly used for shared directories where multiple users need group access. For example:</li>
 
 ```
 	chmod g+s directory
 ```
-
-	</li>
-	<li>
-	<b>Sticky Bit: </b> The sticky bit is primarily used on directories to ensure that only the owner of a file can delete or rename it, even if other users have write permissions on the directory. This prevents users from tampering with each other's files in shared directories like <em> /tmp </em>. for example:
+<li><b>Sticky Bit: </b> The sticky bit is primarily used on directories to ensure that only the owner of a file can delete or rename it, even if other users have write permissions on the directory. This prevents users from tampering with each other's files in shared directories like <em> /tmp </em>. for example:</li>
 
 ```
 	chmod +t directory
 ```
-
-	</li>
+</ul>
 
 ### Symbolic Notation for Permissions
 Instead of using octal notation, you can set permissions using a symbolic notation using letters:
 <ul>
-	<li>**u**: Owner</li>
-	<li>**g**: Group</li>
-	<li>**o**: Others<li>
-	<li>**a**: All (equivalent to **ogo**)</li>
+	<li> <b>u</b>: Owner</li>
+	<li> <b>g</b> : Group</li>
+	<li> <b>o</b> : Others</li>
+	<li> <b>a</b> : All (equivalent to **ogo**)</li>
 </ul>
 For example, to grant read and execute permissions to the owner and group of a file:
 
