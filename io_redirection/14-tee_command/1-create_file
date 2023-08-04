@@ -1,0 +1,7 @@
+#!/bin/bash
+touch tee_demo.txt
+cat << EOF > tee_demo.txt
+This is a demo of the tee command
+The command is used to read input from the standard input
+The command writes the input to the standard output and to the file
+EOF

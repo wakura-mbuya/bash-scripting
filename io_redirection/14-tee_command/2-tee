@@ -1,0 +1,2 @@
+#!/bin/bash
+tee < tee_demo.txt > copy_of_tee_demo.txt
